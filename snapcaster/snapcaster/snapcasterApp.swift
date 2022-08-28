@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct snapcasterApp: App {
+    @StateObject var cardViewModel = CardViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(cardViewModel)
         }
     }
 }

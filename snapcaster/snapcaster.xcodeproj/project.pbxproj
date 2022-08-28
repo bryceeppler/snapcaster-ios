@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		7E23140528BA5760005EDFEA /* snapcasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23140428BA5760005EDFEA /* snapcasterApp.swift */; };
-		7E23140728BA5760005EDFEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23140628BA5760005EDFEA /* ContentView.swift */; };
 		7E23140928BA5762005EDFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E23140828BA5762005EDFEA /* Assets.xcassets */; };
 		7E23140C28BA5762005EDFEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E23140B28BA5762005EDFEA /* Preview Assets.xcassets */; };
+		7EF343F828BBA8AB00C19D57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF343F728BBA8AB00C19D57 /* ContentView.swift */; };
+		7EF343FC28BBA8C800C19D57 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF343FB28BBA8C800C19D57 /* HomeView.swift */; };
+		7EF343FE28BBA8D800C19D57 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF343FD28BBA8D800C19D57 /* TabBar.swift */; };
+		7EF3440028BBAB4D00C19D57 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF343FF28BBAB4D00C19D57 /* SettingsView.swift */; };
+		7EF3440228BBABF200C19D57 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3440128BBABF200C19D57 /* SearchView.swift */; };
+		7EF3440428BBACBB00C19D57 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3440328BBACBB00C19D57 /* CardModel.swift */; };
+		7EF3440628BBAF6400C19D57 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3440528BBAF6400C19D57 /* ProductCard.swift */; };
+		7EF3440828BBB54F00C19D57 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3440728BBB54F00C19D57 /* CardList.swift */; };
+		7EF3440C28BBB78700C19D57 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3440B28BBB78700C19D57 /* CardView.swift */; };
+		7EF3441028BBC8C400C19D57 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3440F28BBC8C400C19D57 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E23140128BA5760005EDFEA /* snapcaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapcaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E23140428BA5760005EDFEA /* snapcasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapcasterApp.swift; sourceTree = "<group>"; };
-		7E23140628BA5760005EDFEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E23140828BA5762005EDFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E23140B28BA5762005EDFEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7EF343F728BBA8AB00C19D57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EF343FB28BBA8C800C19D57 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7EF343FD28BBA8D800C19D57 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		7EF343FF28BBAB4D00C19D57 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7EF3440128BBABF200C19D57 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7EF3440328BBACBB00C19D57 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		7EF3440528BBAF6400C19D57 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		7EF3440728BBB54F00C19D57 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		7EF3440B28BBB78700C19D57 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7EF3440F28BBC8C400C19D57 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,10 @@
 		7E23140328BA5760005EDFEA /* snapcaster */ = {
 			isa = PBXGroup;
 			children = (
+				7EF343F328BBA87200C19D57 /* VIews */,
+				7EF343F228BBA86E00C19D57 /* Models */,
+				7EF343F128BBA86800C19D57 /* ViewModels */,
 				7E23140428BA5760005EDFEA /* snapcasterApp.swift */,
-				7E23140628BA5760005EDFEA /* ContentView.swift */,
 				7E23140828BA5762005EDFEA /* Assets.xcassets */,
 				7E23140A28BA5762005EDFEA /* Preview Content */,
 			);
@@ -65,6 +85,61 @@
 				7E23140B28BA5762005EDFEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7EF343F128BBA86800C19D57 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7EF3440F28BBC8C400C19D57 /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7EF343F228BBA86E00C19D57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EF3440328BBACBB00C19D57 /* CardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7EF343F328BBA87200C19D57 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				7EF343F628BBA89200C19D57 /* Main */,
+				7EF343F528BBA88E00C19D57 /* Detail */,
+				7EF343F428BBA88200C19D57 /* Component */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		7EF343F428BBA88200C19D57 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7EF3440528BBAF6400C19D57 /* ProductCard.swift */,
+				7EF3440728BBB54F00C19D57 /* CardList.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7EF343F528BBA88E00C19D57 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7EF3440B28BBB78700C19D57 /* CardView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7EF343F628BBA89200C19D57 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7EF343F728BBA8AB00C19D57 /* ContentView.swift */,
+				7EF343FB28BBA8C800C19D57 /* HomeView.swift */,
+				7EF3440128BBABF200C19D57 /* SearchView.swift */,
+				7EF343FF28BBAB4D00C19D57 /* SettingsView.swift */,
+				7EF343FD28BBA8D800C19D57 /* TabBar.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E23140728BA5760005EDFEA /* ContentView.swift in Sources */,
+				7EF343F828BBA8AB00C19D57 /* ContentView.swift in Sources */,
+				7EF343FC28BBA8C800C19D57 /* HomeView.swift in Sources */,
+				7EF3440228BBABF200C19D57 /* SearchView.swift in Sources */,
+				7EF3440028BBAB4D00C19D57 /* SettingsView.swift in Sources */,
+				7EF3440628BBAF6400C19D57 /* ProductCard.swift in Sources */,
+				7EF3440428BBACBB00C19D57 /* CardModel.swift in Sources */,
+				7EF3440828BBB54F00C19D57 /* CardList.swift in Sources */,
+				7EF3441028BBC8C400C19D57 /* CardViewModel.swift in Sources */,
 				7E23140528BA5760005EDFEA /* snapcasterApp.swift in Sources */,
+				7EF3440C28BBB78700C19D57 /* CardView.swift in Sources */,
+				7EF343FE28BBA8D800C19D57 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
