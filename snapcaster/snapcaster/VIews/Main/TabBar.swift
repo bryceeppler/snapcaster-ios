@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     init() {
-        setupTabBar()
+//        setupTabBar()
     }
 
     var body: some View {
@@ -27,6 +27,7 @@ struct TabBar: View {
                     Label("Settings", systemImage: "gearshape.2")
                 }
         }
+        .accentColor(Color("DeepRed"))
     }
 }
 

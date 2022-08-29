@@ -14,9 +14,6 @@ struct SearchView: View {
 
         NavigationView {
      
-            ZStack {
-                Color("Background")
-                         .ignoresSafeArea()
                 ScrollView {
                     
                     CardList(cards: cardViewModel.cards)
@@ -24,8 +21,9 @@ struct SearchView: View {
                 }
                 .navigationBarItems(leading:
                                            Text("snapcaster")
-                       .foregroundColor(.blue)
-                       .fontWeight(.black)
+                    
+                       .foregroundColor(Color("DeepRed"))
+                       .fontWeight(.semibold)
                                        
                    )
                 .navigationBarItems(trailing:
@@ -33,6 +31,7 @@ struct SearchView: View {
                                                     "Search for a magic card",
                                                     text: $cardName
                                                 )
+                                            .frame(maxWidth:200)
                                                 .onSubmit {
                                                     print("Searching for " + cardName)
                                                     Task {
@@ -41,7 +40,7 @@ struct SearchView: View {
                                                         
                                                 }
             )
-            }
+            
         }
         .navigationViewStyle(.stack)
 
@@ -52,6 +51,10 @@ struct SearchView: View {
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView()
+            .preferredColorScheme(.dark)
+            .environmentObject(CardViewModel())
+        SearchView()
+            .preferredColorScheme(.light)
             .environmentObject(CardViewModel())
     }
 }

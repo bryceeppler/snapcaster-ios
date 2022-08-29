@@ -36,22 +36,20 @@ struct CardView: View {
                         .font(.title)
                         .bold()
                         .multilineTextAlignment(.center)
-                        .foregroundColor(.white)
                     VStack(alignment: .leading, spacing: 5) {
                         Text(card.set)
                             .font(.system(size: 20))
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
                         
                         Text("Condition: \(card.condition)")
                             .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(.white)
 
                         Text("$\(card.price.description) CAD")
                             .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(.white)
 
                         Link("Buy from \(card.website)", destination: URL(string: card.link)!)
+                            .buttonStyle(.borderedProminent)
+          
                     }
                     
                 }

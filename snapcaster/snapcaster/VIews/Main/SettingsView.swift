@@ -10,8 +10,13 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         NavigationView {
-            Text("v 1.0.0")
-                .navigationTitle("Settings")
+            ZStack {
+                Color("Background")
+                    .ignoresSafeArea()
+                Text("v 1.0.0")
+                    .navigationTitle("Settings")
+            }
+            
         }
         .navigationViewStyle(.stack)
 

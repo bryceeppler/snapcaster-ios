@@ -12,13 +12,16 @@ class CardViewModel: ObservableObject {
     
     init() {
         // fetch data from api
-        cards = Card.all
+        cards = []
     }
     
     func fetchData(cardName: String) async {
+            // clear current data
+        cards.removeAll()
+        
             // create url
             let searchName = cardName.replacingOccurrences(of: " ", with: "+")
-            guard let url = URL(string: "http://127.0.0.1:8000/api/ios/?name=" + searchName)
+            guard let url = URL(string: "http://alb-sc-api-1201377282.us-east-1.elb.amazonaws.com/api/ios/?name=" + searchName)
             else{
                 print("Invalid url")
                 return
